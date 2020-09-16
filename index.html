@@ -1,5 +1,53 @@
-Nombre:			Daniel Alejandro Moreno Franco
-Programa:		Ingenieria de Sistemas
-Fecha Creacion:	Septiembre 8 de 2020
-Celular:		3176572427
-Correo: 		dmorenofr@gmail.com
+<DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<link href="css/Site.css" rel="stylesheet" type="text/css">
+ 		<title>Presaberes</title>	
+
+	</head>
+	<body>
+
+		<div class="container "> 
+			
+			<div class ="service logo" style="padding: 10px">
+				<img src="img/UNAD.png">
+				<strong> <h1>FASE 2 DISEÑO</h1> </strong> 
+				<hr />
+			</div>		   
+			
+			<div style="clear:both;width:100%; margin-bottom:30px;"></div>
+
+			<div>
+				<button class="accordion">Datos Personales <img src="img/datosp.svg" width="50"></button>
+				<div class="panel" >
+				 	<p><strong>Nombre: </strong> Daniel Alejandro Moreno Franco</p>
+					<p><strong>Programa: </strong> Ingenieria de Sistemas </p>
+					<p><strong>Fecha de Creacion: </strong> Septiembre 8 de 2020 </p>
+                    <p><strong>Celular: </strong> 3176572427 </p>
+					<p><strong>Correo: </strong> dmorenofr@gmail.com</p>
+                    <p><strong>Link Actividad Fase 2: </strong> <a href="planing.html"> Fase2</a></p>
+				</div>
+			</div>
+
+		</div>
+
+		<script>
+			var acc = document.getElementsByClassName("accordion");
+			var i;
+
+			for (i = 0; i < acc.length; i++) {
+			  acc[i].addEventListener("click", function() {
+			    this.classList.toggle("active");
+			    var panel = this.nextElementSibling;
+			    if (panel.style.maxHeight){
+			      panel.style.maxHeight = null;
+			    } else {
+			      panel.style.maxHeight = panel.scrollHeight + "px";
+			    } 
+			  });
+			}
+		</script>
+	
+	</body>
+</html>
