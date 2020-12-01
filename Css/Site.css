@@ -131,7 +131,7 @@ input[type=text] {
   text-align: left;  
 }
 
-footer {
+.footer {
   font-family: Open Sans,sans-serif;
   text-align: center;
   padding: 3px;
