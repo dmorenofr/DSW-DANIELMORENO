@@ -19,6 +19,15 @@
     
 
 </head>
+
+  <script> 
+    $(document).ready(function () {
+      $('#dtBasicExample').DataTable({
+        "pagingType": "full" // "simple" option for 'Previous' and 'Next' buttons only
+      });
+      $('.dataTables_length').addClass('bs-select');
+    });
+  </script>
 <body>  
      <div>
         <nav class="navbar navbar-expand-sm bg-light navbar-dark">
